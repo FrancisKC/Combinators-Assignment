@@ -1,0 +1,35 @@
+* {
+    font-family: arial;
+}
+h2 {
+    text-align: center;
+}
+
+p, button{
+   
+}
+/* selects inside of all descendants*/
+#outerDiv p {
+    /* styling the parent */
+  color: blue  
+}
+/*selects all inside parent(direct descendant)*/
+#innerDiv > p {
+    color: green;
+}
+/* selcts all elements placed immedistely after an elemtnt*/
+h3 + p {
+    color: blue;
+    text-decoration: underline;
+}
+/* selects all elements placed immediately before an element */
+p ~ h4 {
+    color: orangered;
+}
+
+#insideInnerDiv > p{
+    color: brown;
+}
+body {
+    background-color: rgb(206, 33, 183);
+}
